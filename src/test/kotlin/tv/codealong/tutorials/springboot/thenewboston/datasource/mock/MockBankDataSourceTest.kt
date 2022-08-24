@@ -1,8 +1,8 @@
-package tv.codealong.tutorials.springboot.TheNewBoston.datasource.mock
+package tv.codealong.tutorials.springboot.thenewboston.datasource.mock
 
-import org.assertj.core.api.Assertions.assertThat
-import org.junit.jupiter.api.Assertions.*
+import org.assertj.core.api.Assertions.*
 import org.junit.jupiter.api.Test
+
 
 internal class MockBankDataSourceTest{
 

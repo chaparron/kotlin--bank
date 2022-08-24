@@ -1,4 +1,4 @@
-package tv.codealong.tutorials.springboot.TheNewBoston
+package tv.codealong.tutorials.springboot.thenewboston
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

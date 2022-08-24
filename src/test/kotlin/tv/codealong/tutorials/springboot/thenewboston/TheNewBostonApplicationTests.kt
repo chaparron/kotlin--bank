@@ -1,4 +1,4 @@
-package tv.codealong.tutorials.springboot.TheNewBoston
+package tv.codealong.tutorials.springboot.thenewboston
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

@@ -1,4 +1,4 @@
-package tv.codealong.tutorials.springboot.TheNewBoston.model
+package tv.codealong.tutorials.springboot.thenewboston.model
 
 data class Bank (
     val accountNumber: String,
