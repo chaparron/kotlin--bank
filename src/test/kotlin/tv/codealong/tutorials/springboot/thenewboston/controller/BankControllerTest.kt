@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.http.MediaType
+import org.springframework.test.annotation.DirtiesContext
 import org.springframework.test.web.servlet.*
 import tv.codealong.tutorials.springboot.thenewboston.model.Bank
 
@@ -169,12 +170,12 @@ internal class BankControllerTest @Autowired constructor(
                 .andExpect { status { isNotFound() } }
         }
     }
-
     @Nested
     @DisplayName("DELETE /api/banks{accountNumber}")
     @TestInstance(Lifecycle.PER_CLASS)
     inner class DeleteExistingBank {
         @Test
+        @DirtiesContext
         fun `Should delete the bank with the given account number`(){
             // Given
             val accountNumber = 1234
@@ -198,6 +199,8 @@ internal class BankControllerTest @Autowired constructor(
                 .andExpect { status { isNotFound() } }
         }
     }
+
+
 
 
 
